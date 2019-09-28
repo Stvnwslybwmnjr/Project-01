@@ -1,0 +1,25 @@
+
+
+#header-img{
+    height: 275px;
+    background-image: url("./Images /Main-Mountain-View.jpg");
+    background-position: cover; 
+    
+}
+
+
+/* Center aligning the header  */
+h1 { 
+    text-align: center;
+}
+
+
+/* Center align the description under the header  */
+#header-description{
+    text-align: center;
+}
+
+/* Center the button under the desccription  */
+#explore-btn { 
+    align-items: center;
+}
