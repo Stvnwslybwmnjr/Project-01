@@ -1,10 +1,14 @@
 
+/* This is the nav bar  */
+#navbar{
+    background-color: transparent; 
+}
+
 
 #header-img{
     height: 275px;
-    background-image: url("./Images /Main-Mountain-View.jpg");
+    background-image: url("./Images /PR_AspenChamber_maroonbellsJeremySwanson.jpg");
     background-position: cover; 
-    
 }
 
 
@@ -22,4 +26,40 @@ h1 {
 /* Center the button under the desccription  */
 #explore-btn { 
     align-items: center;
+}
+
+
+/* Th below is for the first camping container  */
+
+#camping-ing{ 
+    max-height: 100%; 
+}
+
+#camping-content-container{
+    width: 100%; 
+    margin-right: 0px;
+    margin-left: 0px; 
+    padding-top: 40px; 
+    padding-right: 0px; 
+    padding-left: 0px; 
+}
+
+/* The below is for the hiking container  */
+#hiking-content-container{
+    width: 100%; 
+    margin-right: 0px;
+    margin-left: 0px; 
+    padding-top: 30px; 
+    padding-right: 0px; 
+    padding-left: 0px; 
+}
+
+/* The below is for the mountian bikes trails contaiiner  */
+#bike-content-container{
+    width: 100%; 
+    margin-right: 0px;
+    margin-left: 0px; 
+    padding-top: 30px; 
+    padding-right: 0px; 
+    padding-left: 0px; 
 }
