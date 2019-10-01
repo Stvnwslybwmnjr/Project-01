@@ -13,13 +13,25 @@
     <!-- Link to interal CSS  -->
     <link rel="stylesheet" href="./assests/sytle.css">
 
-    <title>Document</title>
+    <title>YouHike Adventures</title>
 
 </head>
 
 <body>
+    <!-- This is the nav bar  -->
+    <!-- <div class="container-fluid">
+        <nav class="navbar navbar-light" id="navbar">
+            <a class="navbar-brand" href="#">
+                <img src="./assests/Images /Screen Shot 2019-09-30 at 9.34.32 PM.png" width="30" height="30"
+                    class="d-inline-block align-top" alt="hikingboot-icon">
+                YouHike
+            </a>
+        </nav>
+    </div> -->
+
     <!-- this is the container that will hold the image  -->
-    <div class="container-fluid bg-primary" id="header-img"></div>
+    <div class="container-fluid bg-primary" id="header-img">
+    </div>
 
     <!-- Header with Website title, description, & explore button -->
     <div class="container-fluid">
@@ -30,18 +42,74 @@
                 <br>
                 <p id="header-description">This is a description about our webapge. This is a description about our
                     webapge . This is a description about our webapge . This is a description about our webapge </p>
-                    <br>
+                <br>
                 <!-- When user clicked, the user is taken to a search page  -->
-                <a id="explore-btn" href="search-explore.html" class="btn btn-secondary btn-lg"
-                    role="button">Explore</a>
-                    <br>
+                <a id="explore-btn" href="search-explore.html" class="btn btn-secondary btn-lg" role="button">Explore
+                    Adventures</a>
+                <div class="col-4"></div>
             </div>
-            <div class="col-4"></div>
-
-
         </div>
     </div>
 
+    <!-- This is the camping containers  -->
+    <div class="container-fluid">
+        <div class="row shadow p-1 mb-1 bg-white rounded">
+            <div class="col-5" id="camping-Img-containier">
+                <img src="./assests/Images /Camping.jpg" class="card-img" alt="camping">
+            </div>
+            <div class="col-7" id="camping-content-container">
+                <div class="card mb-3">
+                    <div class="card-body" id="campnig-content">
+                        <h5 class="card-title"> Camping Adventures </h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural
+                            lead-in to additional content. This content is a little bit longer.</p>
+                        <button type="button" class="btn btn-outline-secondary">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- This is the hiking containers  -->
+    <div class="container-fluid">
+        <div class="row shadow p-1 mb-1 bg-white rounded">
+            <div class="col-7" id="hiking-content-container">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title"> Popular Hiking Trails </h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural
+                            lead-in to additional content. This content is a little bit longer.</p>
+                        <button type="button" class="btn btn-outline-secondary">Explore</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5" id="camping-Img-containier">
+                <img src="./assests/Images /Happy-Hiker.jpg" class="card-img" alt="camping">
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- This is the bike travel(s) container -->
+    <div class="container-fluid">
+        <div class="row shadow p-1 mb-1 bg-white rounded">
+            <div class="col-5" id="camping-Img-containier">
+                <img src="./assests/Images /MoutianBikers.jpg" class="card-img" alt="camping">
+            </div>
+            <div class="col-7" id="bike-content-container">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title"> Moutain Bike Trails </h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural
+                            lead-in to additional content. This content is a little bit longer.</p>
+                        <button type="button" class="btn btn-outline-secondary">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
 
 
 
