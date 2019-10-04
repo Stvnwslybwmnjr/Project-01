@@ -3,3 +3,37 @@
     height: 275px
 }
 
+/* This is the background image */
+#header-img{
+    height: 275px;
+    background-image: url("./Images /PR_AspenChamber_maroonbellsJeremySwanson.jpg");
+    background-position: cover; 
+}
+
+/* This is for the search sitting on top of the background image  */
+#search-div{
+    
+}
+
+#search-card-body {
+    display: flex; 
+    text-align: center;  
+}
+
+/* This is for the populated search results  */
+#searched-content-container {
+    padding: 15px; 
+    border: 1px solid lightgrey; 
+    border-radius: 10px; 
+    background-color: white; 
+}
+
+#searched-image-container {
+    padding-right: 0px; 
+    float: left;
+}
+
+#search-content-container{
+    padding-left: 1px; 
+    float: left;
+}

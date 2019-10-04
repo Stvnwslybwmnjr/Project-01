@@ -17,16 +17,79 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row shadow p-3 bg-white rounded" id="search-container">
-<div class="col-4"></div>
-<div class="col-4">
-    
-</div>
-<div class="col-4"></div>
+
+
+    <div class="container-fluid bg-primary shadow p-3 mb-5 bg-white rounded" id="header-img">
+        <div class="row">
+            <div class="col-4"></div>
+
+            <div class="col-4">
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                    <div class="card-body">
+
+                        <!-- This is the search  -->
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                        <!-- End of search  -->
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-4"></div>
         </div>
+        <!-- End of container -->
     </div>
-    
+
+    <!-- The below is how the search results will populate on the screen -->
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10 secondDiv">
+
+                <div class="row">
+                    <div id="searched-content-container">
+
+                        <div class="col-5" id="searched-image-container">
+                            <img src="./assests/Images /Camping.jpg" class="card-img" alt="Image">
+                        </div>
+
+                        <div class="col-7" id="search-content-container">
+
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="card mb-3">
+                                        <div class="card-body" id="campnig-content">
+                                            <h5 class="card-title" id="searched-content-title">Bike Trail Name </h5>
+                                            <div class="card-text" id="searched-content-description">
+                                                <p id="searched-city">City</p>
+                                                <p id="searched-difficulty">dificulty</p>
+                                                <p d="searched-rating">rating</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-outline-secondary" id="learn-more-btn">Learn
+                                        More!</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- End of inbeded row  -->
+                </div>
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <!-- End of container -->
+    </div>
+
+
+
+
 </body>
 
 </html>
