@@ -16,46 +16,68 @@
     <!-- Link to interal CSS  -->
     <link rel="stylesheet" href="./assests/sytle.css">
 
+    <!-- Link to external fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+
     <title>Biking Adventures</title>
 
 </head>
 
 <body>
 
-    <!-- this is the container that will hold the image  -->
-    <div class="container-fluid bg-primary" id="header-img">
+    <!-- This is the header and the content within the header  -->
+    <div class="container-fluid bg-primary shadow p-3 bg-white rounded" id="header-img">
+        <div class="row">
+            <div class="col-4"></div>
+
+            <div class="col-4">
+                <div class="card shadow p-3 mb-5 rounded" id="card-body2">
+                    <div class="card-body">
+                        <h1>Biking Adventures</h1>
+                        <br>
+                        <p id="header-description">This is a description about our webapge. This is a description about
+                            our
+                            webapge . This is a description about our webapge . This is a description about our webapge
+                        </p>
+                        <a class="btn btn-secondary my-2 my-sm-0" href="search-explore.html" role="button"
+                            id="exploreBTN">explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4"></div>
+        </div>
+        <!-- End of container -->
     </div>
 
-    <!-- Header with Website title, description, & explore button -->
+    <!-- This is the bar under the container -->
     <div class="container-fluid">
-        <div class="row shadow p-3 mb-5 bg-white rounded">
-            <div class="col-4"></div>
-            <div class="col-4">
-                <h1>Bking Adventures</h1>
-                <br>
-                <p id="header-description">This is a description about our webapge. This is a description about our
-                    webapge . This is a description about our webapge . This is a description about our webapge </p>
-                <br>
-                <!-- When user clicked, the user is taken to a search page  -->
-                <a id="explore-btn" href="search-explore.html" class="btn btn-secondary btn-lg" role="button">Explore</a>
-                <div class="col-4"></div>
+        <div class="row shadow p-1 mb-3 bg-white rounded">
+            <!-- This is the nav bar under the image  -->
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light"></nav>
             </div>
         </div>
+        <!-- End of container -->
     </div>
+
 
     <!-- This is the camping containers  -->
     <div class="container-fluid">
-        <div class="row shadow p-1 mb-1 bg-white rounded">
-            <div class="col-5" id="camping-Img-containier">
-                <img src="./assests/Images /Camping.jpg" class="card-img" alt="camping">
-            </div>
-            <div class="col-7" id="camping-content-container">
-                <div class="card mb-3">
-                    <div class="card-body" id="campnig-content">
-                        <h5 class="card-title"> Camping Adventures </h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit longer.</p>
-                            <a id="smaller-explore-btn" href="search-explore.html" class="btn btn-outline-secondary" role="button">Explore</a>
+        <div id="box-Containers">
+            <div class="row shadow p-1 mb-1 bg-white rounded">
+                <div class="col-5" id="camping-Img-containier">
+                    <img src="./assests/Images /Camping.jpg" class="card-img" alt="camping">
+                </div>
+                <div class="col-7" id="camping-content-container">
+                    <div class="card mb-3">
+                        <div class="card-body" id="campnig-content">
+                            <h5 class="card-title"> Camping Adventures </h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit longer.</p>
+                            <a id="smaller-explore-btn" href="search-explore.html" class="btn btn-outline-secondary"
+                                role="button">Explore <i class="fas fa-biking"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -65,19 +87,22 @@
 
     <!-- This is the hiking containers  -->
     <div class="container-fluid">
-        <div class="row shadow p-1 mb-1 bg-white rounded">
-            <div class="col-7" id="hiking-content-container">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title"> Popular Hiking Trails </h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit longer.</p>
-                            <a id="smaller-explore-btn" href="search-explore.html" class="btn btn-outline-secondary" role="button">Explore</a>
+        <div id="box-Containers">
+            <div class="row shadow p-1 mb-1 bg-white rounded">
+                <div class="col-7" id="hiking-content-container">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title"> Popular Hiking Trails </h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit longer.</p>
+                            <a id="smaller-explore-btn" href="search-explore.html" class="btn btn-outline-secondary"
+                                role="button"><i class="fas fa-biking"></i> Explore</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-5" id="camping-Img-containier">
-                <img src="./assests/Images /Happy-Hiker.jpg" class="card-img" alt="camping">
+                <div class="col-5" id="camping-Img-containier">
+                    <img src="./assests/Images /Happy-Hiker.jpg" class="card-img" alt="camping">
+                </div>
             </div>
         </div>
     </div>
@@ -85,23 +110,35 @@
 
     <!-- This is the bike travel(s) container -->
     <div class="container-fluid">
-        <div class="row shadow p-1 mb-1 bg-white rounded">
-            <div class="col-5" id="camping-Img-containier">
-                <img src="./assests/Images /MoutianBikers.jpg" class="card-img" alt="camping">
-            </div>
-            <div class="col-7" id="bike-content-container">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title"> Moutain Bike Trails </h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit longer.</p>
-                            <a id="smaller-explore-btn" href="search-explore.html" class="btn btn-outline-secondary" role="button">Explore</a>
+        <div id="box-Containers">
+            <div class="row shadow p-1 mb-1 bg-white rounded">
+                <div class="col-5" id="camping-Img-containier">
+                    <img src="./assests/Images /MoutianBikers.jpg" class="card-img" alt="camping">
+                </div>
+                <div class="col-7" id="bike-content-container">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title"> Moutain Bike Trails </h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit longer.</p>
+                            <a id="smaller-explore-btn" href="search-explore.html" class="btn btn-outline-secondary"
+                                role="button">Explore <i class="fas fa-biking"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <br>
+
+    <div id="footer">
+        <footer>
+            <p id="copyright-text">Copyright 2019 Team [0]</p>
+        </footer>
+    </div>
+
+
+    </div>
 
 
 

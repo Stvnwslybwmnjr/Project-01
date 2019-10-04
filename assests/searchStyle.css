@@ -6,24 +6,33 @@ body {
 
 /* This is the background image */
 #header-img{
-    height: 225px;
+    height: 600px;
     background-image: url("./Images /PR_AspenChamber_maroonbellsJeremySwanson.jpg");
     background-position: cover; 
 }
 
-/* This is for the search bar in the nav bar under the header image  */
-.navBar{
-    background-color: white; 
+
+/* This is the content in the container that is stlling on the header image  */
+#card-body2 {
+    background-color: #f3ecec5d
+    }
+
+
+#bikingAdventuresText {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px; 
+    text-align: center; 
+    color: rgb(71, 71, 71); 
 }
-
-#searchBarAndBtn {
-    float: left;
-}
-
-
 
 
 /* This is for the populated search results  */
+#explore-btn {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px; 
+}
+
+
 #searched-content-container {
     padding: 15px; 
     border: 1px solid lightgrey; 
@@ -39,4 +48,29 @@ body {
 #search-content-container{
     padding-left: 1px; 
     float: left;
+}
+
+#campnig-content {
+    margin-left: 8px; 
+    padding-right: 2px; 
+}
+
+#explore-btn {
+    padding-left: 2px;
+}
+
+
+
+/* This is the footer  */
+#footer {
+    background-color: #8d89896c; 
+    height: 40px; 
+    margin-top: 15px; 
+}
+
+#copyright-text {
+    font-size: 10px; 
+    padding-left: 10px; 
+    padding-top: 10px; 
+    color: #696868
 }

@@ -11,25 +11,35 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- font awesome link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/0471c845ba.js" crossorigin="anonymous"></script>
 
     <!-- Link to interal CSS  -->
     <link rel="stylesheet" href="./assests/searchStyle.css">
+
+    <!-- Link to external fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 
     <title>Search</title>
 </head>
 
 <body>
 
-
     <div class="container-fluid bg-primary shadow p-3 bg-white rounded" id="header-img">
         <div class="row">
             <div class="col-4"></div>
 
             <div class="col-4">
-                <div class="card shadow p-3 mb-5 bg-white rounded">
+                <div class="card shadow p-3 mb-5 rounded" id="card-body2">
                     <div class="card-body">
+                        <p id="bikingAdventuresText">Find your perfect trail</p>
+                        <br>
 
+                        <!-- This is the search bar and btn in the card body  -->
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="explore more..."
+                                aria-label="Search">
+                            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -38,29 +48,18 @@
         <!-- End of container -->
     </div>
 
+
+    <!-- This is the bar under the container -->
     <div class="container-fluid">
         <div class="row shadow p-1 mb-3 bg-white rounded">
             <!-- This is the nav bar under the image  -->
             <div class="col-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navBar">
-                    <!-- icon on the nav bar -->
-                    <img src="./assests/Images /Screen Shot 2019-09-30 at 9.34.32 PM.png" width="30" height="30"
-                        alt="icon">
-
-                    <!-- this is the container that holds the seach bar and btn  -->
-                    <div class="searchBarndBtn">
-                        <!-- This is the search container and btn  -->
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
-                        <!-- end of search bar and btn  -->
-                    </div>
-                </nav>
+                <nav class="navbar navbar-expand-lg navbar-light"></nav>
             </div>
         </div>
         <!-- End of container -->
     </div>
+
 
     <!-- The below is how the search results will populate on the screen -->
     <div class="container">
@@ -69,8 +68,9 @@
             <div class="col-10 secondDiv">
 
                 <div class="row">
-                    <div id="searched-content-container">
 
+                    <div id="searched-content-container">
+                        <!-- This is the image within the container  -->
                         <div class="col-5" id="searched-image-container">
                             <img src="./assests/Images /Camping.jpg" class="card-img" id="search-image" alt="Image">
                         </div>
@@ -78,9 +78,10 @@
                         <div class="col-7" id="search-content-container">
 
                             <div class="row">
+                                <!-- This is the bike trail title, city, difficulty, and rating  -->
                                 <div class="col-9">
-                                    <div class="card mb-3">
-                                        <div class="card-body" id="campnig-content">
+                                    <div class="card mb-3" id="campnig-content">
+                                        <div class="card-body">
                                             <h5 class="card-title" id="searched-content-title">Bike Trail Name </h5>
                                             <div class="card-text" id="searched-content-description">
                                                 <p id="searched-city">City</p>
@@ -90,10 +91,11 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <!-- this is the button within the searched content container  -->
                                 <div class="col-3">
-                                    <button type="button" class="btn btn-outline-secondary" id="learn-more-btn">
-                                        <i class="fal fa-biking-mountain"></i>
+                                    <button type="button" class="btn btn-outline-secondary" id="explore-btn">explore <i
+                                            class="fas fa-biking"></i>
                                     </button>
                                 </div>
                             </div>
@@ -110,6 +112,13 @@
     </div>
 
 
+    <div id="footer">
+        <footer>
+
+            <p id="copyright-text">Copyright 2019 Team [0]</p>
+
+        </footer>
+    </div>
 
 
 </body>
