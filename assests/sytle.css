@@ -1,16 +1,13 @@
-
-/* This is the nav bar  */
-#navbar{
-    background-color: transparent; 
+/* This is the webpage background image  */
+body {
+    background-image: url("./Images /bodyBackgroundImg.png"); 
 }
-
 
 #header-img{
     height: 275px;
     background-image: url("./Images /PR_AspenChamber_maroonbellsJeremySwanson.jpg");
     background-position: cover; 
 }
-
 
 /* Center aligning the header  */
 h1 { 
@@ -25,7 +22,9 @@ h1 {
 
 /* Center the button under the desccription  */
 #explore-btn { 
-    align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
 
 

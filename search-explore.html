@@ -10,16 +10,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
     <!-- Link to interal CSS  -->
     <link rel="stylesheet" href="./assests/searchStyle.css">
 
-    <title>Search Adventures </title>
+    <title>Search</title>
 </head>
 
 <body>
 
 
-    <div class="container-fluid bg-primary shadow p-3 mb-5 bg-white rounded" id="header-img">
+    <div class="container-fluid bg-primary shadow p-3 bg-white rounded" id="header-img">
         <div class="row">
             <div class="col-4"></div>
 
@@ -27,17 +30,34 @@
                 <div class="card shadow p-3 mb-5 bg-white rounded">
                     <div class="card-body">
 
-                        <!-- This is the search  -->
-                        <form class="form-inline">
+                    </div>
+                </div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+        <!-- End of container -->
+    </div>
+
+    <div class="container-fluid">
+        <div class="row shadow p-1 mb-3 bg-white rounded">
+            <!-- This is the nav bar under the image  -->
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navBar">
+                    <!-- icon on the nav bar -->
+                    <img src="./assests/Images /Screen Shot 2019-09-30 at 9.34.32 PM.png" width="30" height="30"
+                        alt="icon">
+
+                    <!-- this is the container that holds the seach bar and btn  -->
+                    <div class="searchBarndBtn">
+                        <!-- This is the search container and btn  -->
+                        <form class="form-inline my-2 my-lg-0">
                             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                         </form>
-                        <!-- End of search  -->
+                        <!-- end of search bar and btn  -->
                     </div>
-                </div>
-
+                </nav>
             </div>
-            <div class="col-4"></div>
         </div>
         <!-- End of container -->
     </div>
@@ -52,7 +72,7 @@
                     <div id="searched-content-container">
 
                         <div class="col-5" id="searched-image-container">
-                            <img src="./assests/Images /Camping.jpg" class="card-img" alt="Image">
+                            <img src="./assests/Images /Camping.jpg" class="card-img" id="search-image" alt="Image">
                         </div>
 
                         <div class="col-7" id="search-content-container">
@@ -65,14 +85,16 @@
                                             <div class="card-text" id="searched-content-description">
                                                 <p id="searched-city">City</p>
                                                 <p id="searched-difficulty">dificulty</p>
-                                                <p d="searched-rating">rating</p>
+                                                <p id="searched-rating">rating</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- this is the button within the searched content container  -->
                                 <div class="col-3">
-                                    <button type="button" class="btn btn-outline-secondary" id="learn-more-btn">Learn
-                                        More!</button>
+                                    <button type="button" class="btn btn-outline-secondary" id="learn-more-btn">
+                                        <i class="fal fa-biking-mountain"></i>
+                                    </button>
                                 </div>
                             </div>
 
