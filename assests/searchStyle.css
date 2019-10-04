@@ -1,24 +1,27 @@
-/* This is the header with the search bar inside  */
-#search-container{
-    height: 275px
+/* This is the webpage background image  */
+body {
+    background-image: url("./Images /bodyBackgroundImg.png"); 
 }
+
 
 /* This is the background image */
 #header-img{
-    height: 275px;
+    height: 225px;
     background-image: url("./Images /PR_AspenChamber_maroonbellsJeremySwanson.jpg");
     background-position: cover; 
 }
 
-/* This is for the search sitting on top of the background image  */
-#search-div{
-    
+/* This is for the search bar in the nav bar under the header image  */
+.navBar{
+    background-color: white; 
 }
 
-#search-card-body {
-    display: flex; 
-    text-align: center;  
+#searchBarAndBtn {
+    float: left;
 }
+
+
+
 
 /* This is for the populated search results  */
 #searched-content-container {
