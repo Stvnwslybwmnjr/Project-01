@@ -3,33 +3,52 @@ body {
     background-image: url("./Images /bodyBackgroundImg.png"); 
 }
 
+/* this is the header and content in the header  */
 #header-img{
-    height: 275px;
+    height: 600px;
     background-image: url("./Images /PR_AspenChamber_maroonbellsJeremySwanson.jpg");
     background-position: cover; 
 }
 
-/* Center aligning the header  */
+
+#card-body2 {
+background-color: #f3ecec5d; 
+}
+
+/* Center aligning the text in header  */
 h1 { 
-    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px; 
+    text-align: center; 
+    color: rgb(71, 71, 71); 
 }
 
 
 /* Center align the description under the header  */
 #header-description{
     text-align: center;
+} 
+
+/* This is for the explore btn  */
+#exploreBTN {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px; 
 }
 
-/* Center the button under the desccription  */
-#explore-btn { 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+/* This is for all three content containers  */
+#box-Containers {
+    margin-left: 15px; 
+    margin-right: 15px; 
+}
+
+/* this is for all buttns within the three content containers  */
+#smaller-explore-btn {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px; 
 }
 
 
-/* Th below is for the first camping container  */
-
+/* The below is for the first camping container  */
 #camping-ing{ 
     max-height: 100%; 
 }
@@ -39,7 +58,7 @@ h1 {
     margin-right: 0px;
     margin-left: 0px; 
     padding-top: 40px; 
-    padding-right: 0px; 
+    padding-right: 15px; 
     padding-left: 0px; 
 }
 
@@ -50,7 +69,7 @@ h1 {
     margin-left: 0px; 
     padding-top: 30px; 
     padding-right: 0px; 
-    padding-left: 0px; 
+    padding-left: 15px; 
 }
 
 /* The below is for the mountian bikes trails contaiiner  */
@@ -59,6 +78,21 @@ h1 {
     margin-right: 0px;
     margin-left: 0px; 
     padding-top: 30px; 
-    padding-right: 0px; 
+    padding-right: 15px; 
     padding-left: 0px; 
+}
+
+
+/* This is the footer  */
+#footer {
+    background-color: #8d89896c; 
+    height: 40px; 
+    margin-top: 15px; 
+}
+
+#copyright-text {
+    font-size: 10px; 
+    padding-left: 10px; 
+    padding-top: 10px; 
+    color: #696868
 }
