@@ -71,18 +71,18 @@ $.ajax(settings2).done(function (response2) {
    $("#trails").html(`<p>Description: ${description}</p>`)
    var rating = response2.data[0].difficulty;
    var directions = response2.data[0].directions;
-   $("#trails").append(`<p>Rating: ${rating}</p>`)
+   $("#difficulty").append(`<p> ${rating}</p>`)
    $("#trails").append(`<p>Directions: ${directions}</p>`)
    var trailName = response2.data[0].name;
-   $("#trails").prepend(`<p>Trail Name: ${trailName}</p>`)
+   $("#trail-name").prepend(`<p> ${trailName}</p>`)
    var score = response2.data[0].rating;
-   $("#trails").append(`<p>Rating: ${score}/5`)
+   $("#rating4-5").append(`<p> ${score}/5`)
    var trailThumbnail = response2.data[0].thumbnail;
 //    $("#trails").append(`<img src="${trailThumbnail}"`)
    var trailImage = $("<img>")
         
         $(trailImage).attr("src", trailThumbnail)
-        $("#trails").append(trailImage)
+        $("#trail-img").append(trailImage)
 
 
     

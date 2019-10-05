@@ -19,35 +19,31 @@
     <!-- Link to external fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Handlee|Old+Standard+TT|Pacifico&display=swap" rel="stylesheet">
 
-   <!-- jQuery -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <title>Search</title>
 </head>
 
 <body>
-        <div id="pix"></div>
-        <form>
-            <input type="text" id="textInput" placeholder="Destination">
-            <button type="submit" id="search">search</button>
-            <div id="pictures"></div>
-            <br>
-            <div id="trails"></div>
-            <br>
-            <div id="flights"></div>
-    
-        </form>
-            <script src="./assets/javascript/js2.js"></script>
+    <div id="pix"></div>
+    <form>
+        <!-- This ID will link directions and descritions of the trails  -->
+        id="trails"
+        <!-- Tyhis is for the airport image -->
+        <div id="pictures"></div>
+        <!-- This is a link to flights  -->
+        <div id="flights"></div>
+
+    </form>
 
 
 
-
-<body>
 
     <div class="container-fluid bg-primary shadow p-3 bg-white rounded" id="header-img">
         <div class="row">
             <div class="col-4">
-                    <a class="btn my-2 my-sm-0 fas fa-arrow-left" id="backbtn" href="Index.html" role="button"> back</a>
+                <a class="btn my-2 my-sm-0 fas fa-arrow-left" id="backbtn" href="Index.html" role="button"> back</a>
             </div>
 
             <div class="col-4">
@@ -58,9 +54,10 @@
 
                         <!-- This is the search bar and btn in the card body  -->
                         <form class="form-inline my-2 my-lg-0" id="search-bar">
-                            <input class="form-control mr-sm-2" type="search" placeholder="explore more..."
-                                aria-label="Search">
-                            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+                            <input class="form-control mr-sm-2" id="textInput" type="search"
+                                placeholder="explore more..." aria-label="Search">
+                            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"
+                                id="search">Search</button>
                         </form>
                     </div>
                 </div>
@@ -81,38 +78,37 @@
 
 
     <!-- The below is how the search results will populate on the screen -->
-     <!-- This is Container number 1  -->
-     <div class="container">
-            <div id="box-Containers">
-                <div class="row shadow p-1 mb-1 bg-white rounded">
-                   
-                    <div class="col-3">
-                        <img src="./assests/Images/pro-biker.jpg" class="card-img" id="first-image" alt="camping">
-                    </div>
-                   
-                   
-                    <div class="col-7" id="camping-content-container">
-                        <div class="card mb-3">
-                            <div class="card-body" id="campnig-content">
-                                <h5 class="card-title"> Trail name</h5>
-                                <a class="card-text">location</a>
-                                <br>
-                                <a class="card-text">difficulty</a>
-                                <br>
-                                <a class="card-text">rating</a>
-                            </div>
+    <!-- This is Container number 1  -->
+    <div class="container">
+        <div id="box-Containers">
+            <div class="row shadow p-1 mb-1 bg-white rounded">
+
+                <div class="col-3">
+                    <div id="trail-img" alt="image"></div>
+                </div>
+
+                <!-- this is the content in the card  -->
+                <div class="col-7">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title" id="trail-name"></h5>
+                            <br>
+                            <a class="card-text" id="difficulty"></a>
+                            <a class="card-text" id="rating4-5"></a>
                         </div>
                     </div>
-            
-                    <div class="col-2">
-                            <a id="smaller-explore-btn" href="search-explore.html" class="btn btn-outline-secondary"
-                            role="button">explore <i class="fas fa-biking"></i></a>
+                </div>
 
-                    </div>
+                <!-- This is the explore btn  -->
+                <div class="col-2">
+                    <a id="smaller-explore-btn" href="search-explore.html" class="btn btn-outline-secondary"
+                        role="button">explore <i class="fas fa-biking"></i></a>
+
                 </div>
             </div>
         </div>
-        <br>
+    </div>
+    <br>
 
 
 
@@ -128,7 +124,7 @@
         </footer>
     </div>
 
-<script src="./assests/js.js"></script>
+    <script src="./assests/js.js"></script>
 
 </body>
 
