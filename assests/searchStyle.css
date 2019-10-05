@@ -13,16 +13,22 @@ body {
 
 
 /* This is the content in the container that is stlling on the header image  */
-#card-body2 {
-    background-color: #f3ecec5d
-    }
+#FindYourTrailCardBody {
+    background-color: #f3ececa6; 
+    margin-top: 75px; 
+}
 
-
-#bikingAdventuresText {
+#FindYourTrailText {
     font-family: 'Pacifico', cursive;
     font-size: 30px; 
     text-align: center; 
     color: rgb(71, 71, 71); 
+}
+
+#search-bar {
+    margin: -20px -50px; 
+    position:relative;
+    left:100px; 
 }
 
 
@@ -58,6 +64,10 @@ body {
 #explore-btn {
     padding-left: 2px;
 }
+
+
+
+
 
 
 
