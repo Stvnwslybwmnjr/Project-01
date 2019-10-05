@@ -1,9 +1,9 @@
 /* This is the webpage background image  */
 body {
-    background-image: url("./Images /bodyBackgroundImg.png"); 
+    background-image: url("./Images/bodyBackgroundImg.png"); 
 }
 
-#back-btn {
+#backbtn {
     font-size: 8px; 
     background-color: #69686800
 }
@@ -12,7 +12,7 @@ body {
 /* This is the background image */
 #header-img{
     height: 600px;
-    background-image: url("./Images /PR_AspenChamber_maroonbellsJeremySwanson.jpg");
+    background-image: url("./Images/PR_AspenChamber_maroonbellsJeremySwanson.jpg");
     background-position: cover; 
 }
 
@@ -37,50 +37,13 @@ body {
 }
 
 
-/* This is for the populated search results  */
-#explore-btn {
-    font-family: 'Pacifico', cursive;
-    font-size: 20px; 
-}
-
-
-#searched-content-container {
-    padding: 15px; 
-    border: 1px solid lightgrey; 
-    border-radius: 10px; 
-    background-color: white; 
-}
-
-#searched-image-container {
-    padding-right: 0px; 
-    float: left;
-}
-
-#search-content-container{
-    padding-left: 1px; 
-    float: left;
-}
-
-#campnig-content {
-    margin-left: 8px; 
-    padding-right: 2px; 
-}
-
-#explore-btn {
-    padding-left: 2px;
-}
-
-
-
-
-
-
-
 /* This is the footer  */
 #footer {
     background-color: #8d89896c; 
     height: 40px; 
     margin-top: 15px; 
+    bottom: 0;
+    width: 100%;
 }
 
 #copyright-text {

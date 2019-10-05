@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./assests/searchStyle.css">
 
     <!-- Link to external fonts  -->
-    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Handlee|Old+Standard+TT|Pacifico&display=swap" rel="stylesheet">
 
     <title>Search</title>
 </head>
@@ -27,8 +27,7 @@
     <div class="container-fluid bg-primary shadow p-3 bg-white rounded" id="header-img">
         <div class="row">
             <div class="col-4">
-                <button  class="fas fa-arrow-left" id="back-btn" href="Index.html">
-                </button>
+                    <a class="btn my-2 my-sm-0 fas fa-arrow-left" id="backbtn" href="Index.html" role="button"> back</a>
             </div>
 
             <div class="col-4">
@@ -61,56 +60,39 @@
 
 
 
-
     <!-- The below is how the search results will populate on the screen -->
-    <div class="container">
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-10 secondDiv">
-
-                <div class="row">
-
-                    <div id="searched-content-container">
-                        <!-- This is the image within the container  -->
-                        <div class="col-5" id="searched-image-container">
-                            <img src="./assests/Images/Camping.jpg" class="card-img" id="search-image" alt="Image">
-                        </div>
-
-                        <div class="col-7" id="search-content-container">
-
-                            <div class="row">
-                                <!-- This is the bike trail title, city, difficulty, and rating  -->
-                                <div class="col-9">
-                                    <div class="card mb-3" id="campnig-content">
-                                        <div class="card-body">
-                                            <h5 class="card-title" id="searched-content-title">Bike Trail Name </h5>
-                                            <div class="card-text" id="searched-content-description">
-                                                <p id="searched-city">City</p>
-                                                <p id="searched-difficulty">dificulty</p>
-                                                <p id="searched-rating">rating</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- this is the button within the searched content container  -->
-                                <div class="col-3">
-                                    <button type="button" class="btn btn-outline-secondary" id="explore-btn">explore <i
-                                            class="fas fa-biking"></i>
-                                    </button>
-                                </div>
+     <!-- This is Container number 1  -->
+     <div class="container">
+            <div id="box-Containers">
+                <div class="row shadow p-1 mb-1 bg-white rounded">
+                   
+                    <div class="col-3">
+                        <img src="./assests/Images/pro-biker.jpg" class="card-img" id="first-image" alt="camping">
+                    </div>
+                   
+                   
+                    <div class="col-7" id="camping-content-container">
+                        <div class="card mb-3">
+                            <div class="card-body" id="campnig-content">
+                                <h5 class="card-title"> Trail name</h5>
+                                <a class="card-text">location</a>
+                                <br>
+                                <a class="card-text">difficulty</a>
+                                <br>
+                                <a class="card-text">rating</a>
                             </div>
-
                         </div>
                     </div>
-                    <!-- End of inbeded row  -->
-                </div>
+            
+                    <div class="col-2">
+                            <a id="smaller-explore-btn" href="search-explore.html" class="btn btn-outline-secondary"
+                            role="button">explore <i class="fas fa-biking"></i></a>
 
+                    </div>
+                </div>
             </div>
-            <div class="col-1"></div>
         </div>
-        <!-- End of container -->
-    </div>
+        <br>
 
 
 
