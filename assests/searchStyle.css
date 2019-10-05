@@ -3,6 +3,11 @@ body {
     background-image: url("./Images /bodyBackgroundImg.png"); 
 }
 
+#back-btn {
+    font-size: 8px; 
+    background-color: #69686800
+}
+
 
 /* This is the background image */
 #header-img{
