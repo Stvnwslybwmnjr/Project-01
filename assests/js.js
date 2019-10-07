@@ -65,28 +65,131 @@ var settings2 = {
 }
 
 $.ajax(settings2).done(function (response2) {
+    for (var i = 0; i < 10;i++){
+        // =========================DYNAMIC CARD CREATION===============
+        let card = $("<div>");
+$(card).attr("class", "row shadow p-1 mb-1 bg-white rounded");
+
+let col = $("<div>");
+$(col).attr("class", "col-3");
+
+let trailImg = $("<div>");
+$(trailImg).attr("id", `trail-img${[i]}`);
+$(trailImg).attr("alt", `image`);
+
+
+let col7 = $("<div>");
+$(col7).attr("class", "col-7");
+
+let thing = $("<div>")
+$(thing).attr("class", "card mb-3")
+
+let cardbody = $("<div>")
+$(cardbody).attr("class", "card-body")
+
+let h5 = $("<h5>")
+$(h5).attr("class", "card-title")
+$(h5).attr("id", `trail-name${[i]}`)
+
+let br = $("<br>")
+
+let aDiff = $("<a>")
+$(aDiff).attr("class", "card-text")
+$(aDiff).attr("id", `difficulty${[i]}`)
+
+let aRate = $("<a>")
+$(aRate).attr("class", "card-text");
+$(aRate).attr("id", `rating4-5${[i]}`);
+
+// =============Explore Button===============
+let col2 = $("<div>");
+$(col2).attr("class", "col-2");
+
+let aSmlExp = $("<a>");
+$(aSmlExp).attr("href", "search-explore.html");
+$(aSmlExp).attr("id", `smaller-explore-btn${[i]}`);
+$(aSmlExp).attr("class", "btn btn-outline-secondary");
+$(aSmlExp).attr("role", "button");
+$(aSmlExp).text("explore");
+let icon = $("<i>");
+$(icon).attr("class", "fas fa-biking");
+$(aSmlExp).append(icon);
+$(col2).append(aSmlExp);
+
+
+$(cardbody).append(h5)
+$(cardbody).append(br)
+$(cardbody).append(aDiff);
+$(cardbody).append(aRate);
+$(thing).append(cardbody)
+$(col7).append(thing)
+
+$(col).append(trailImg);
+
+$(card).append(col);
+$(card).append(col7);
+$(card).append(col2);
+
+// =================== Accordion feature==================================
+// =================header Section ====================================
+let accordion = $("<div>")
+$(accordion).attr("id", `accordion${[i]}`)
+let accordCard = $("<div>")
+$(accordCard).attr("class", "card")
+let accordCardHead = $("<div>")
+$(accordCardHead).attr("class", "card-header")
+$(accordCardHead).attr("id", `headingOne${[i]}`)
+let h5mb = $("<h5>")
+$(h5mb).attr("class", "mb-0")
+let accordButton = $("<button>")
+$(accordButton).attr("class", "btn btn-link")
+$(accordButton).attr("data-toggle", "collapse")
+$(accordButton).attr("data-target", `#collapseOne${[i]}`)
+$(accordButton).attr("aria-expanded", "true")
+$(accordButton).attr("aria-controls", `collapseOne${[i]}`)
+$(accordButton).text("Trail Description")
+
+$(h5mb).append(accordButton);
+$(accordCardHead).append(h5mb);
+$(accordion).append(accordCardHead);
+// =================== EXPANDING SECTION =====================
+let accordBody = $("<div>");
+$(accordBody).attr("id", `collapseOne${[i]}`);
+$(accordBody).attr("class", "collapse Show");
+$(accordBody).attr("aria-labelledby", `headingOne${[i]}`);
+$(accordBody).attr("data-parent", `#accordion${[i]}`);
+let accCardBody = $("<div>");
+$(accCardBody).attr("class", "card-body");
+$(accCardBody).text(`Description: ${response2.data[i].description}`);
+
+$(accordBody).append(accCardBody);
+$(accordion).append(accordBody);
+$(card).append(accordion);
+
+$("#box-Containers").append(card);
+        // =======================Original card display================
     console.log(response2);
-    console.log(response2.data[0].city);
-   var description = response2.data[0].description;
-   $("#trails").html(`<p>Description: ${description}</p>`)
-   var rating = response2.data[0].difficulty;
-   var directions = response2.data[0].directions;
-   $("#difficulty").append(`<p> ${rating}</p>`)
-   $("#trails").append(`<p>Directions: ${directions}</p>`)
-   var trailName = response2.data[0].name;
-   $("#trail-name").prepend(`<p> ${trailName}</p>`)
-   var score = response2.data[0].rating;
-   $("#rating4-5").append(`<p> ${score}/5`)
-   var trailThumbnail = response2.data[0].thumbnail;
+    console.log(response2.data[i].city);
+   var description = response2.data[i].description;
+   $(`#trails${i}`).html(`<p>Description: ${description}</p>`)
+   var rating = response2.data[i].difficulty;
+   var directions = response2.data[i].directions;
+   $(`#difficulty${i}`).append(`<p>Difficulty: ${rating}</p>`)
+   $(`#trails${i}`).append(`<p>Directions: ${directions}</p>`)
+   var trailName = response2.data[i].name;
+   $(`#trail-name${i}`).prepend(`<p>Trail Name: ${trailName}</p>`)
+   var score = response2.data[i].rating;
+   $(`#rating4-5${i}`).append(`<p>User Rating: ${score}/5`)
+   var trailThumbnail = response2.data[i].thumbnail;
 //    $("#trails").append(`<img src="${trailThumbnail}"`)
    var trailImage = $("<img>")
         
         $(trailImage).attr("src", trailThumbnail)
-        $("#trail-img").append(trailImage)
+        $(`#trail-img${i}`).append(trailImage)
 
 
     
-    
+    }
 });
 
     var settings3 = {
