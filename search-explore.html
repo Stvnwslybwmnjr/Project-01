@@ -29,7 +29,10 @@
     <!-- Link to interal CSS  -->
     <link rel="stylesheet" href="./assests/searchStyle.css">
 
-    <!-- Link to external fonts  -->
+    <!-- Link to shake libary  -->
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+
+    <!-- Link to external fonts (google fonts) -->
     <link href="https://fonts.googleapis.com/css?family=Handlee|Old+Standard+TT|Pacifico&display=swap" rel="stylesheet">
 
     <!-- jQuery -->
@@ -89,6 +92,37 @@
     </div>
 
 
+    <!-- This is the content that will disappear when the search populates -->
+    <div class="container-fluid">
+        <div class="row empty-shake-row">
+            <div class="col-4"></div>
+            <div class="col-4">
+
+                <div class="card shadow bike-card">
+                    <div class="card-body">
+                        <div class="cartoon-moutins">
+                            <img src="./assests/Images/cartoon-mountians.png" 
+                            style="margin-top: 0px;padding-top: 10px;">
+                        </div>
+                        <div class="card transparate-shake-box">
+                            <div class="card-body">
+                                <div class="shake-slow shake-constant">
+                                    <i class="fas fa-biking"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+
+
+
+
 
     <!-- The below is how the search results will populate on the screen -->
 
@@ -96,9 +130,6 @@
         <div id="box-Containers"></div>
     </div>
     <br>
-
-
-
 
 
     <!-- This is the footer  -->
