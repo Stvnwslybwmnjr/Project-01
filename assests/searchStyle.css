@@ -14,6 +14,7 @@ body {
     height: 600px;
     background-image: url("./Images/PR_AspenChamber_maroonbellsJeremySwanson.jpg");
     background-position: cover; 
+    margin-bottom: 0px; 
 }
 
 
