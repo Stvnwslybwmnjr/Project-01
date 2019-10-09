@@ -5,9 +5,11 @@ body {
 
 /* this is the header and content in the header  */
 #header-img{
-    height: 600px;
+    height: 720px;
+    width: 100%; 
     background-image: url("./Images/PR_AspenChamber_maroonbellsJeremySwanson.jpg");
-    background-position: cover; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
 }
 
 
@@ -35,10 +37,6 @@ h1 {
     font-family: 'Pacifico', cursive;
     font-size: 20px; 
     width: 150px; 
-    margin: -20px -50px; 
-    position:relative;
-    top: 10px; 
-    left:165px; 
 }
 
 /* This is for the nav under the header image  */
@@ -55,6 +53,16 @@ h1 {
 #smaller-explore-btn {
     font-family: 'Pacifico', cursive;
     font-size: 20px; 
+    transition: transform 1s;
+    
+}
+#smaller-explore-btn:hover {
+    transform: skewX(-20deg);
+}
+
+/* This is centering the text with the card body  */
+.card-body {
+    text-align: center;
 }
 
 /* This removes the bootstrap border around the cards  */
@@ -67,7 +75,6 @@ h1 {
     margin-left: 15px; 
     margin-right: 15px; 
 }
-
 
 
 /* This is for all four containers on the page */
@@ -83,6 +90,14 @@ h5 {
     font-size: 20px; 
 }
 
+.biking-images {
+    border-radius: 3%; 
+    margin-top: 10px; 
+    height: 88%; 
+    width: 88%; 
+    box-shadow: #696868 3px; 
+
+}
 
 
 /* This is the footer  */
