@@ -36,6 +36,40 @@ body {
     left:100px; 
 }
 
+/* This is for the content that will disappear when the searched content populates  */
+.card-body{
+    text-align: center; 
+}
+
+.bike-card{
+    border-radius: 100%; 
+}
+
+.empty-shake-row{
+    height: 400px; 
+    margin-top: 50px; 
+}
+
+.cartoon-moutins{
+    height: 175px;
+
+}
+
+.card {
+    text-align: center; 
+}
+
+.transparate-shake-box{
+    background-color: transparent; 
+}
+
+i{
+  font-size: 50px; 
+  color: rgb(255, 94, 0); 
+  top: -48px;
+  position: relative
+}
+
 
 
 /* This is styling the content within the populated search boxes  */
