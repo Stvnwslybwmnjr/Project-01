@@ -37,6 +37,10 @@ body {
     left:100px; 
 }
 
+.search-icon {
+    font-size: 20px; 
+}
+
 /* This is for the content that will disappear when the searched content populates  */
 #explore-circle-body{
     text-align: center; 
