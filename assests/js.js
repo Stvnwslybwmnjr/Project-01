@@ -2,7 +2,7 @@ $(document).ready(function() {
   $("#search").on("click", function(event) {
     event.preventDefault();
 
-    // ====================== converts input formart for AJAX call ====================================
+        // ====================== converts input formart for AJAX call ====================================
 
     var query = $("#textInput").val();
     console.log(query);

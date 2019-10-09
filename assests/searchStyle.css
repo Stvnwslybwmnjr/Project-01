@@ -3,11 +3,11 @@ body {
     background-image: url("./Images/bodyBackgroundImg.png"); 
 }
 
+/* This is the back button wihtin the header image  */
 #backbtn {
     font-size: 8px; 
     background-color: #69686800
 }
-
 
 /* This is the background image */
 #header-img{
@@ -35,6 +35,25 @@ body {
     position:relative;
     left:100px; 
 }
+
+
+
+/* This is styling the content within the populated search boxes  */
+img {
+    height: 200px;
+    width: 250px;
+    margin: 20px 10px;
+}
+
+.card { 
+    border: 0px; 
+}
+
+.btn-explore {
+    margin-top: 80px; 
+}
+
+
 
 
 /* This is the footer  */
