@@ -12,11 +12,13 @@ body {
 /* This is the background image */
 #header-img{
     height: 600px;
+    width: 100%; 
     background-image: url("./Images/PR_AspenChamber_maroonbellsJeremySwanson.jpg");
-    background-position: cover; 
+    background-size: cover; 
     margin-bottom: 0px; 
-}
+    background-repeat: no-repeat; 
 
+}
 
 /* This is the content in the container that is stlling on the header image  */
 #FindYourTrailCardBody {
@@ -41,7 +43,7 @@ body {
     font-size: 20px; 
 }
 
-/* This is for the content that will disappear when the searched content populates  */
+/* this is the circle with the bike man */
 #explore-circle-body{
     text-align: center; 
 }
@@ -88,12 +90,10 @@ body {
 }
 
 
-
 /* This is styling the content within the populated search boxes  */
 .bg-white{
     margin-bottom: 20px; 
 }
-
 
 img {
     height: 200px;
@@ -105,10 +105,9 @@ img {
     border: 0px; 
 }
 
-.btn-explore {
-    margin-top: 80px; 
+.card-header {
+    background-color: white; 
 }
-
 
 
 /* This is the footer  */
@@ -126,4 +125,3 @@ img {
     padding-top: 10px; 
     color: #696868
 }
-
