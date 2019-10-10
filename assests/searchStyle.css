@@ -20,7 +20,6 @@ body {
 
 }
 
-
 /* This is the content in the container that is stlling on the header image  */
 #FindYourTrailCardBody {
     background-color: #f3ececa6; 
@@ -91,7 +90,6 @@ body {
 }
 
 
-
 /* This is styling the content within the populated search boxes  */
 .bg-white{
     margin-bottom: 20px; 
@@ -112,7 +110,6 @@ img {
 }
 
 
-
 /* This is the footer  */
 #footer {
     background-color: #8d89896c; 
@@ -128,4 +125,3 @@ img {
     padding-top: 10px; 
     color: #696868
 }
-
