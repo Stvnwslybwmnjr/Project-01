@@ -12,9 +12,12 @@ body {
 /* This is the background image */
 #header-img{
     height: 600px;
+    width: 100%; 
     background-image: url("./Images/PR_AspenChamber_maroonbellsJeremySwanson.jpg");
-    background-position: cover; 
+    background-size: cover; 
     margin-bottom: 0px; 
+    background-repeat: no-repeat; 
+
 }
 
 
@@ -41,7 +44,7 @@ body {
     font-size: 20px; 
 }
 
-/* This is for the content that will disappear when the searched content populates  */
+/* this is the circle with the bike man */
 #explore-circle-body{
     text-align: center; 
 }
@@ -94,7 +97,6 @@ body {
     margin-bottom: 20px; 
 }
 
-
 img {
     height: 200px;
     width: 250px;
@@ -105,8 +107,8 @@ img {
     border: 0px; 
 }
 
-.btn-explore {
-    margin-top: 80px; 
+.card-header {
+    background-color: white; 
 }
 
 
