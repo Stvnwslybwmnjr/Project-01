@@ -17,7 +17,7 @@ $(document).ready(function() {
       method: "GET",
       headers: {
         "x-rapidapi-host": "apidojo-kayak-v1.p.rapidapi.com",
-        "x-rapidapi-key": "51948e1073mshb9e095b68967640p15c64ejsn35fc600c9a12"
+        "x-rapidapi-key": "e29d5c6398mshd4d268e94ade454p15bc18jsn71cc246da837"
       }
     };
 
@@ -54,7 +54,7 @@ $(document).ready(function() {
           method: "GET",
           headers: {
               "x-rapidapi-host": "trailapi-trailapi.p.rapidapi.com",
-              "x-rapidapi-key": "51948e1073mshb9e095b68967640p15c64ejsn35fc600c9a12"
+              "x-rapidapi-key": "e29d5c6398mshd4d268e94ade454p15bc18jsn71cc246da837"
             }
         };
                       var settings3 = {
@@ -64,7 +64,7 @@ $(document).ready(function() {
                           method: "GET",
                         headers: {
                             "x-rapidapi-host": "apidojo-kayak-v1.p.rapidapi.com",
-                            "x-rapidapi-key": "51948e1073mshb9e095b68967640p15c64ejsn35fc600c9a12"
+                            "x-rapidapi-key": "e29d5c6398mshd4d268e94ade454p15bc18jsn71cc246da837"
                         }
                     };
                     
